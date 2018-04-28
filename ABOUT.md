@@ -11,3 +11,4 @@ i would like an advice).I wanted to have the UI more proffessionally looking and
 - I wrote the whole code locally and then uploaded it all at once to Github that's why it has only one commit.
 - In general, I enjoyed doing this task, I learnd a lot during the process. I got more experienced using spring
 boot in addition to learning new things like thymeleaf.
+- I have around 1 years experience in Java. I also have a simple knowledge in HTML, CSS and javascript.
