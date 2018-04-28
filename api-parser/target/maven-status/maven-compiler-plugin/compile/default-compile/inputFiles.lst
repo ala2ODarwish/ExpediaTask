@@ -1,0 +1,12 @@
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/Hotel.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/HotelPricingInfo.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/Destination.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/Persona.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/Offers.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/HotelURLS.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/SearchOrder.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/UserInfo.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/OfferDateRange.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/HotelOfferParser.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/OfferInfo.java
+/home/user/hotel-best-deals/api-parser/src/main/java/com/expedia/json/parser/HotelInfo.java

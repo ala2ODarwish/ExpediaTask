@@ -1,0 +1,11 @@
+com/expedia/json/parser/Hotel.class
+com/expedia/json/parser/HotelInfo.class
+com/expedia/json/parser/OfferInfo.class
+com/expedia/json/parser/HotelURLS.class
+com/expedia/json/parser/HotelPricingInfo.class
+com/expedia/json/parser/Destination.class
+com/expedia/json/parser/UserInfo.class
+com/expedia/json/parser/Offers.class
+com/expedia/json/parser/OfferDateRange.class
+com/expedia/json/parser/Persona.class
+com/expedia/json/parser/HotelOfferParser.class

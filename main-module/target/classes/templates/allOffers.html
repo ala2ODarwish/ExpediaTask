@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        p {
+        font-size:100%;
+        font-family:verdana;
+        color:yellow
+        }
+        h1,h2,a {
+        color: yellow
+        }
+        img{
+        width:100px;
+        height:200px
+        }
+        div{
+            padding: 25px 50px 75px 100px;
+        }
+
+
+    </style>
+</head>
+<body bgcolor="Darkblue" onload="myFunction()">
+<script  th:inline="javascript">
+function myFunction() {
+var r= /*[[${name}]]*/;
+var i;
+var j;
+if(r.length == 0){
+        var emptyElement = document.createElement("H2");
+        var nodeText = document.createTextNode("Invalid search criteria, please try again!");
+        emptyElement.appendChild(nodeText);
+        document.getElementById("parent").appendChild(emptyElement);
+}
+for (i = 0; i <r.length; i++) {
+    var divElement = document.createElement("div");
+    divElement.setAttribute("id",i);
+    document.getElementById("parent").appendChild(divElement);
+    for (j = 0; j <9; j++) {
+     if (j == 0) {
+            var hElement = document.createElement("H2");
+            var nodeText = document.createTextNode(r[i][j]);
+            hElement.appendChild(nodeText);
+           document.getElementById("parent").appendChild(hElement);
+           continue;
+            }
+
+     if (j == 1) {
+            var imagElement = document.createElement("IMG");
+            imagElement.setAttribute("src",r[i][j]);
+           document.getElementById("parent").appendChild(imagElement);
+           continue;
+            }
+
+     if (j == 8) {
+      var aElement = document.createElement('a');
+       aElement.setAttribute('href', r[i][j]);
+       aElement.innerHTML = "Click to visit website";
+       document.getElementById("parent").appendChild(aElement);
+       continue;
+            }
+
+        var pElement = document.createElement("P");
+        var nodeText = document.createTextNode(r[i][j]);
+        pElement.appendChild(nodeText);
+        document.getElementById("parent").appendChild(pElement);
+    }
+
+    }
+}
+
+</script>
+
+<p hidden id="e" th:text=" ${name.length}" />
+<h1 align="center">Offers List Matching Your Criteria
+</h1>
+<div id="parent">
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        h2 {
+        font-size:300%;
+        text-align:center;
+        font-family:verdana;
+        color:yellow
+        }
+        p {
+        font-size:150%;
+        text-align:center;
+        font-family:verdana;
+        color:yellow
+        }
+        form, label {
+        font-size:100%;
+        font-family:verdana;
+        color:yellow
+        }
+        a {
+        color:yellow
+        }
+        .container {
+        width: 80%;
+        height: 100%;
+        background: yellow;
+        margin: auto;
+        padding: 10px;
+             }
+        .left {
+            width: 15%;
+            height: 200px;
+            background: Darkblue;
+            float: left;
+            padding: 25px 50px 75px 100px;
+        }
+        .right {
+            margin-left: 15%;
+            height: 200px;
+            background: Darkblue;
+            padding: 25px 50px 75px 100px;
+        }
+
+        .button {border-radius: 12px;}
+
+    </style>
+
+</head>
+<body bgcolor="Darkblue">
+    <h2>
+        Hotel Best Deals</h2>
+    <p>
+        Enter search criteria below to get hotel offers</p>
+    <section class="container">
+        <form action="/allOffers">
+            <div class="left">
+                <label>Destination: </label>
+                <select name="city" id="city">
+                    <option value="All destinations">All destinations</option>
+                    <option value="Miami">Miami</option>
+                    <option value="Las Vegas">Las Vegas</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="New York">New York</option>
+                    <option value="Chicago">Chicago</option>
+                </select>
+                </br>
+                </br>
+                <label>Guest Rating: </label>
+                <select name="minGuestRating" id="minGuestRating">
+                    <option value="All ratings">All ratings</option>
+                    <option value="0.0 - 2.5">Fair</option>
+                    <option value="2.6 - 3.8">good</option>
+                    <option value="3.9 - 5">Excellent</option>
+                </select>
+                </br>
+                </br>
+                <label>Total Rating: </label>
+                <select name="minTotalRating" id="minTotalRating">
+                    <option value="All ratings">All ratings</option>
+                    <option value="0.0 - 499.0">Fair</option>
+                    <option value="500.0 - 1000.0">good</option>
+                    <option value="1001.0 - 1000000">Excellent</option>
+                </select>
+            </div>
+            <div class="right">
+        </br>
+        Trip start date <input type="date" id="startDate" name="startDate"></br>
+        </br>
+        Trip end date <input type="date" id="endDate" name="endDate"></br>
+        </br>
+        <input type="submit" value="Submit" class="button">
+        </div>
+        </form>
+    </section>
+</body>
+</html>
